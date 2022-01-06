@@ -557,16 +557,18 @@
     	$test = new Test($_POST);
 	    ?>
 
+
+
       <section class="bg-whisper">
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-lg-9 col-xl-7">
               <div class="section-50 section-md-75 section-xl-100">
                 <h3>Free Consultation</h3>
-                <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" method="post" action="#">
+                <form class="rd-mailform " data-form-output="form-output-global" data-form-type="contact" method="post">
                   <div class="row row-30">
                     <div class="col-md-6">
-                      <div class="form-wrap">
+                      <div class="form-wrap form-input">
                         <?php
                             // echo "Votre nom : ";
                         //<input class="form-input" id="request-form-name" type="text" name="name" data-constraints="@Required">
@@ -576,7 +578,7 @@
                         <p>
 						              <?php
 							              if(isset($_POST['Nom'])){
-                              echo "bg";
+                              echo ("Nom : ".$_POST['Nom'] );
                             }
                               else{
                                 echo "il manque ton nom";
