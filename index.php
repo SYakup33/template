@@ -374,7 +374,10 @@
           </div>
         </div>
       </section>
-
+      <?php
+    	  require('C:\xampp\htdocs\site\content.php');
+    	  $content = new Content($_POST);
+	    ?>
       <section class="section parallax-container bg-black" data-parallax-img="images/progress-bars-parallax-1.jpg">
         <div class="parallax-content">
           <div class="section-50 section-md-90">
@@ -382,26 +385,48 @@
               <div class="row row-40">
                 <div class="col-xs-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg icon-primary mercury-icon-group"></span>
-                    <div class="text-large counter">1450</div>
-                    <p class="box-header">Happy Clients</p>
+                    <div class="text-large counter">
+                    <p>
+                    <?php
+                      $content = createInput('happy');
+                      echo "Total happinness 1450";
+                    ?>
+                    </p>
                   </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg-smaller icon-primary mercury-icon-scales"></span>
-                    <div class="text-large counter">23</div>
-                    <p class="box-header">Years of Experience</p>
+                    <div class="text-large counter">
+                    <p>
+                    <?php
+                      $content = createInput('years');
+                      echo "Years of Experience 23";
+                    ?>
+                    </p>
+                    </div>
                   </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg-smaller icon-primary mercury-icon-partners"></span>
-                    <div class="text-large counter counter-percent">98</div>
-                    <p class="box-header">Successful Cases</p>
+                    <div class="text-large counter">
+                    <p>
+                    <?php
+                      $content = createInput('success');
+                      echo "Successful casss 98";
+                    ?>
+                    </p>
+                    </div>
                   </div>
-                </div>
                 <div class="col-xs-6 col-md-3">
                   <div class="box-counter box-counter-inverse"><span class="novi-icon icon icon-lg icon-primary mercury-icon-case"></span>
-                    <div class="text-large counter">7500</div>
-                    <p class="box-header">Personal Injury Cases</p>
+                  <div class="text-large counter">
+                    <p>
+                    <?php
+                      $content = createInput('injury');
+                      echo "Injury cases 1500";
+                    ?>
+                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
